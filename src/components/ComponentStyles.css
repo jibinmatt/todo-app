@@ -1,0 +1,104 @@
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+.inputBox {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #353535;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  color: #efefef;
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.inputBox:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.25);
+  outline: none;
+  caret-color: #efefef;
+  background-color: #4d4d4d;
+}
+
+.inputSubmit {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 10px;
+  right: 8px;
+  border: none;
+  font-size: 15px;
+  background-color: #13241e;
+  color: #efefef;
+  transition: 0.2s all;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.inputSubmit:hover {
+  color: #efefef;
+  background-color: #487c6a;
+}
+
+.inputSubmit:active {
+  transform: scale(0.8);
+  color: #efefef;
+  box-shadow: 0 0 5px black;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.todoCard {
+  display: flex;
+  width: 29.5%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 15px;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(53,97,81,1) 0%, rgba(41,76,63,1) 0%, rgba(0,255,165,1) 0%, rgba(74,134,113,1) 0%);
+}
+
+.todosText {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.todosText:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todoCard {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+  }
+  .todoCard {
+    width: 100%;
+  }
+}
